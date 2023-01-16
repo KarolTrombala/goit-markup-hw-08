@@ -1,0 +1,88 @@
+// Projekty porfolio
+.project {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 30px;
+  column-gap: 20px;
+
+  &__box {
+    background-color: $whiteColor;
+    border: 1px solid #eeeeee;
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__overlay {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__overlay > img {
+    display: block;
+  }
+
+  &__overlay-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+
+    display: flex;
+    align-items: center;
+
+    transition-property: transform;
+    transform: translateY(100%);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__overlay-card-text {
+    font-style: inherit;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: $whiteColor;
+
+    padding: 0 24px;
+  }
+
+  &__box:hover &__overlay-card {
+    transform: translateY(0);
+  }
+
+  &__box:hover,
+  &__box:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+  }
+
+  &__description-title {
+    font-style: inherit;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $mainColor;
+
+    margin: 20px 24px 4px;
+  }
+
+  &__description-text {
+    font-style: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: $supportColor;
+
+    margin: 0 24px 20px;
+  }
+}

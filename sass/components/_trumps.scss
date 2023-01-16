@@ -1,0 +1,30 @@
+// Nasze atuty
+.trumps {
+  padding-bottom: 0;
+
+  &__box {
+    padding: 25px 100px;
+    background-color: var(--team-color);
+    border-radius: 4px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-color);
+
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--support-color);
+  }
+}

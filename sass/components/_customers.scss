@@ -1,0 +1,23 @@
+// Nasi klienci
+.customers__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+
+&-link {
+  display: block;
+  border: 1px solid $customersIcon;
+  border-radius: 4px;
+  padding: 16px 32px;
+  fill: $customersIcon;
+
+  transition-property: fill, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&-link:hover {
+  fill: $highlightColor;
+  border-color: $highlightColor;
+}
+}

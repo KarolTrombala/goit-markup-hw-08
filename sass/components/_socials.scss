@@ -1,0 +1,41 @@
+// Ikonki społecznościowe
+.social-icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  &__link {
+    display: block;
+    border-radius: 50%;
+    padding: 12px;
+    height: 44px;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    background-color: $highlightColor;
+  }
+
+  &__link--team {
+    fill: $customersIcon;
+
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link--team:hover,
+  &__link--team:focus {
+    fill: $whiteColor;
+  }
+
+  &__link--footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: $whiteColor;
+
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
