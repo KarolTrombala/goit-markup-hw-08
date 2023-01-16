@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!--Nagłówek makiety - HEADER BLOCK-->
@@ -61,6 +61,13 @@
             </svg>
             +48 111 111 111</a
           >
+          <!--MOBILE MENU BUTTON OPEN-->
+          <button class="menu__toggle js-open-menu">
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-menu40px"></use>
+            </svg>
+          </button>
+           <!--END MOBILE MENU BUTTON OPEN-->
         </div>
       </div>
     </header>
@@ -540,6 +547,52 @@
       </div>
     </footer>
     <!--END FOOTER BLOCK-->
+    <!--MOBILE MENU BLOCK-->
+<div class="menu js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu">
+    <svg width="40" height="40">
+      <use href="./images/icons.svg#icon-close40px"></use>
+    </svg>
+  </button>
+  <div>
+    <ul class="">
+      <li>
+        <a class="" href="#">Agencja</a>
+      </li>
+      <li>
+        <a class="" href="portfolio.html">Portfolio</a>
+      </li>
+      <li>
+        <a class="" href="#">Kontakt</a></li>
+    </ul>
+</div>
+<div class="">
+  <a class="" href="tel:+48111111111">+48 111 111 111</a>
+  <a class="" href="mailto:info@devstudio.com">info@devstudio.com</a>
+  </div>
+  <div>
+    <ul class="">
+      <li>
+        <a class="" href="#">Instagram</a>
+      </li>
+      <li>
+        <a class="" href="#">Twitter</a>
+      </li>
+      <li>
+        <a class="" href="#">Facebook</a>
+      </li>
+      <li>
+        <a class="" href="#">LinkedIn</a></li>
+    </ul>
+  </div>
+</div>
+<script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <!--END MOBILE MENU BLOCK-->
     <!--Modal window - MODAL BLOCK-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -629,6 +682,7 @@
         </form>
       </div>
     </div>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
     <!--END MODAL BLOCK-->
   </body>
