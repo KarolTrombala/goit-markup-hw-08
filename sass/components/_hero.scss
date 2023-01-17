@@ -27,6 +27,7 @@
     max-width: 365px;
     margin: 0 auto;
   }
+
   &__button {
     @extend %button;
     padding: 10px 41px;
@@ -76,6 +77,7 @@
     max-width: 696px;
    }
   }
+  
  @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
