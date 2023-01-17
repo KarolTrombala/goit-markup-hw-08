@@ -1,15 +1,18 @@
 // Czym się zajmujemy
+
 .works {
-// display: none;
+  display: none;
 }
-&__item {
+
+.works__item {
   position: relative;
 
-&__item > img {
+&_ > img {
   display: block;
  }
+}
 
-&__description {
+.works__description {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -23,18 +26,11 @@
   bottom: 0;
   padding: 27px;
   }
-}
 
-
-// TABLET RESPONSIVE
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
- 
-  }
-  
   // DESKTOP RESPONSIVE
   
   @media screen and (min-width: 1200px) {
-    // .works {
-    //   // display:flex
+  .works {
+    display: block;
+   }
   }
