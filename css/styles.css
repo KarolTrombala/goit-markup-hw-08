@@ -179,6 +179,7 @@ body {
 .mobile-menu-icon:hover {
   fill: var(--highlight-color);
 }
+
 .menu-toggle {
   outline: none;
   border: none;
