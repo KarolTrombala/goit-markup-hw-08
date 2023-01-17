@@ -2,7 +2,7 @@
 .header {
   background-color: $whiteColor;
   border-bottom: 1px solid #ececec;
-  padding: 24.54px 0 23.53px;
+  padding: 16px 0;
 
   &__box {
     display: flex;
@@ -46,8 +46,6 @@
   &__menu {
     list-style: none;
     display: flex;
-    margin-left: 93px;
-    gap: 46px;
   }
 
   &__menu-link {
@@ -82,4 +80,38 @@
     border-radius: 2px;
     top: 43.5px;
   }
+}
+// TABLET RESPONSIVE
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header {
+    padding: 26px 0;
+
+    &__menu {
+      margin-left: 83px;
+      gap: 60px;
+    }
+
+    &__menu-contact {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &__menu-contact-item {
+      font-size: 12px;
+  }
+ }
+}
+
+// DESKTOP RESPONSIVE
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 24.54px 0 23.53px;
+
+    &__menu {
+      margin-left: 93px;
+      gap: 46px;
+    }
+ }
 }
