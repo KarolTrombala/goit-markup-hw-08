@@ -4,8 +4,9 @@
 
   &__box {
     padding: 25px 100px;
-    background-color: var(--team-color);
+    background-color: $teamColor;
     border-radius: 4px;
+    text-align: center;
   }
 
   &__title {
@@ -27,4 +28,23 @@
     letter-spacing: 0.03em;
     color: var(--support-color);
   }
+}
+
+// TABLET RESPONSIVE
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+.trumps__item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+}
+
+// DESKTOP RESPONSIVE
+
+@media screen and (min-width: 1200px) {
+ .list {
+  flex-wrap: nowrap;
+ }
+ .section {
+  padding: 94px 0;
+ }
 }
