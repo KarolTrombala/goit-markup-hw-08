@@ -1,11 +1,13 @@
 // Header makiety
 .hero {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: $backgroundColor;
-  padding: 200px 0;
+  padding: 118px 0;
 
-  max-width: 1600px;
   background-image: linear-gradient(to bottom, $heroGradient, $heroGradient),
-    url("../images/hero_underlay.jpg");
+    url("../images/hero_underlay_480.jpg");
 
   &__content {
     display: flex;
@@ -15,19 +17,71 @@
 
   &__title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $whiteColor;
 
-    max-width: 696px;
+    max-width: 365px;
     margin: 0 auto;
   }
   &__button {
     @extend %button;
     padding: 10px 41px;
     margin: 0 auto;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(to bottom, $heroGradient, $heroGradient),
+        url("../images/hero_underlay_480@2x.jpg");
+   }
+  }
+
+// TABLET RESPONSIVE
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    background-image: linear-gradient(to bottom, $heroGradient, $heroGradient),
+      url("../images/hero_underlay_768.jpg");
+ }
+
+ @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(to bottom, $heroGradient, $heroGradient),
+        url("../images/hero_underlay_768@2x.jpg");
+   }
+  }
+}
+
+// DESKTOP RESPONSIVE
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    padding: 200px 0;
+    background-image: linear-gradient(to bottom, $heroGradient, $heroGradient),
+    url("../images/hero_underlay.jpg");
+
+  &__title {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+   }
+  }
+ @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(to bottom, $heroGradient, $heroGradient),
+        url("../images/hero_underlay@2x.jpg");
+   }
   }
 }
