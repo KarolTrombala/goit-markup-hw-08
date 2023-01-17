@@ -15,9 +15,10 @@
 
   transition-delay: 500ms;
 }
+
 .modal {
   position: absolute;
-  width: 528px;
+  width: 450px;
   min-height: 581px;
   top: 50%;
   left: 50%;
@@ -53,7 +54,7 @@
 
   &__title {
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     letter-spacing: 0.03em;
     text-align: center;
     margin-bottom: 12px;
@@ -117,8 +118,8 @@
 
   &__form-regulations {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: $supportColor;
 
@@ -126,7 +127,7 @@
   }
 
   &__form-regulations-text {
-    padding-left: 39px;
+    padding-left: 24px;
   }
 
   &__form-regulations input[type="checkbox"] {
@@ -139,16 +140,17 @@
 
     position: absolute;
     top: 50%;
-    left: 15px;
     transform: translateY(-50%);
   }
 
   &__form-checkbox-svg {
     position: absolute;
     top: 50%;
-    left: 15px;
     transform: translateY(-50%);
     opacity: 0;
+
+    background-color:  $highlightColor;
+    border-radius: 2px;
   }
 
   &__form-regulations input[type="checkbox"]:checked + &__form-checkbox-svg {
@@ -165,4 +167,37 @@
     margin: 20px auto 0;
     display: block;
   }
+
+  &__button:hover {
+    background-color: #188CE8;
+      }
+}
+
+// DESKTOP RESPONSIVE
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;  
+
+  &__title {
+      line-height: 1.15;
+    }
+
+  &__form-regulations {
+      font-size: 14px;
+      line-height: 1.71;
+    }
+
+    &__form-regulations-text {
+      padding-left: 39px;
+    }
+
+  &__form-regulations input[type="checkbox"] {
+      left: 15px;
+    }
+  
+  &__form-checkbox-svg {
+      left: 15px;
+    }
+ }
 }
