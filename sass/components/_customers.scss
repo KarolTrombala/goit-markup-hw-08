@@ -2,7 +2,9 @@
 .customers__list {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 
 &-link {
   display: block;
@@ -10,6 +12,7 @@
   border-radius: 4px;
   padding: 16px 32px;
   fill: $customersIcon;
+  text-align: center;
 
   transition-property: fill, border-color;
   transition-duration: 250ms;
@@ -21,13 +24,23 @@
   border-color: $highlightColor;
  }
 }
+@media screen and (max-width: 767px) {
+  .customers__box {
+      flex-basis: calc((100% - 60px) / 2);
+    }
+   } 
+
 // TABLET RESPONSIVE
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  
+.customers__box {
+    flex-basis: calc((100% - 60px) / 3);
+  }
  } 
  // DESKTOP RESPONSIVE
   
  @media screen and (min-width: 1200px) {
- 
+  .customers__list {
+    flex-wrap: nowrap;
   }
+}
