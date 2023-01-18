@@ -35,10 +35,6 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &_address-link--underline {
-    text-decoration: underline;
-  }
-
   &__address-link:hover,
   &__address-link:focus {
     color: $highlightColor;
@@ -112,6 +108,10 @@
       flex-direction: row;
       text-align: left;
     }
+
+    .footer__address-link--underline {
+      text-decoration: underline;
+  }
 
     .footer__newsletter {
       flex-direction: row;
