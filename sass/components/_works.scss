@@ -7,9 +7,9 @@
 .works__item {
   position: relative;
 
-&_ > img {
-  display: block;
- }
+  &_ > img {
+    display: block;
+  }
 }
 
 .works__description {
@@ -27,10 +27,10 @@
   padding: 27px;
 }
 
-  // DESKTOP RESPONSIVE
-  
-  @media screen and (min-width: 1200px) {
+// DESKTOP RESPONSIVE
+
+@media screen and (min-width: 1200px) {
   .works {
     display: block;
-   }
   }
+}

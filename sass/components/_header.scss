@@ -44,7 +44,7 @@
   }
 
   // Menu makiety
-  
+
   &__menu {
     list-style: none;
     display: flex;
@@ -102,8 +102,8 @@
 
     &__menu-contact-item {
       font-size: 12px;
+    }
   }
- }
 }
 
 // DESKTOP RESPONSIVE
@@ -116,5 +116,5 @@
       margin-left: 93px;
       gap: 46px;
     }
- }
+  }
 }

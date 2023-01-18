@@ -149,7 +149,7 @@
     transform: translateY(-50%);
     opacity: 0;
 
-    background-color:  $highlightColor;
+    background-color: $highlightColor;
     border-radius: 2px;
   }
 
@@ -169,21 +169,21 @@
   }
 
   &__button:hover {
-    background-color: #188CE8;
-      }
+    background-color: #188ce8;
+  }
 }
 
 // DESKTOP RESPONSIVE
 
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;  
+    width: 528px;
 
-  &__title {
+    &__title {
       line-height: 1.15;
     }
 
-  &__form-regulations {
+    &__form-regulations {
       font-size: 14px;
       line-height: 1.71;
     }
@@ -192,12 +192,12 @@
       padding-left: 39px;
     }
 
-  &__form-regulations input[type="checkbox"] {
+    &__form-regulations input[type="checkbox"] {
       left: 15px;
     }
-  
-  &__form-checkbox-svg {
+
+    &__form-checkbox-svg {
       left: 15px;
     }
- }
+  }
 }

@@ -68,7 +68,7 @@
             <use href="./images/icons.svg#icon-menu40px"></use>
           </svg>
         </button>
-         <!--END MOBILE MENU BUTTON OPEN-->
+        <!--END MOBILE MENU BUTTON OPEN-->
       </div>
     </header>
     <!--END HEADER BLOCK-->
@@ -150,7 +150,8 @@
               <img
                 src="./images/desk1.jpg"
                 alt="Praca przy biurku na komputerze i tablecie"
-                srcset="./images/desk1@2x.jpg 2x 370px"
+                srcset="./images/desk1@2x.jpg 370w"
+                sizes="370vw"
               />
               <p class="works__description">Aplikacje Komuterowe</p>
             </li>
@@ -158,7 +159,8 @@
               <img
                 src="./images/desk2.jpg"
                 alt="Praca przy biurku z latopem i telefonem komórkowym"
-                srcset="./images/desk2@2x.jpg 2x"
+                srcset="./images/desk2@2x.jpg 370w"
+                sizes="370vw"
               />
               <p class="works__description">Aplikacje Mobilne</p>
             </li>
@@ -166,7 +168,8 @@
               <img
                 src="./images/desk3.jpg"
                 alt="Praca z tabletem"
-                srcset="./images/desk3@2x.jpg 2x"
+                srcset="./images/desk3@2x.jpg 370w"
+                sizes="370vw"
               />
               <p class="works__description">Rozwiązania graficzne</p>
             </li>
@@ -184,7 +187,8 @@
                 <img
                   alt="Product Designer"
                   src="./images/productdesigner.jpg"
-                  srcset=" ./images/productdesigner@2x.jpg 450w"
+                  srcset="./images/productdesigner@2x.jpg 450w"
+                  sizes="450vw"
                 />
                 <figcaption class="team__description">
                   <h3 class="team__description-name">John Doe</h3>
@@ -242,6 +246,7 @@
                   alt="Frontend Developer"
                   src="./images/frontenddeveloper.jpg"
                   srcset="./images/frontenddeveloper@2x.jpg 450w"
+                  sizes="450vw"
                 />
                 <figcaption class="team__description">
                   <h3 class="team__description-name">John Doe</h3>
@@ -299,6 +304,7 @@
                   alt="Marketing"
                   src="./images/marketing.jpg"
                   srcset="./images/marketing@2x.jpg 450w"
+                  sizes="450vw"
                 />
                 <figcaption class="team__description">
                   <h3 class="team__description-name">John Doe</h3>
@@ -353,10 +359,10 @@
             <li class="team__item">
               <figure class="team__card">
                 <img
-                  src="./images/uidesigner.jpg"
                   alt="UI Designer"
                   src="./images/uidesigner.jpg"
                   srcset="./images/uidesigner@2x.jpg 450w"
+                  sizes="450vw"
                 />
                 <figcaption class="team__description">
                   <h3 class="team__description-name">John Doe</h3>
@@ -542,31 +548,49 @@
     </footer>
     <!--END FOOTER BLOCK-->
     <!--MOBILE MENU BLOCK-->
-<div class="mobile__menu js-menu-container" id="mobile-menu">
-  <button class="menu__toggle js-close-menu">
-    <svg class="mobile__menu-button" width="40" height="40">
-      <use href="./images/icons.svg#icon-close40px"></use>
-    </svg>
-  </button>
-  <div class="menu__container">
-    <ul class="mobile__menu-list">
-      <li class="mobile__menu-item"><a class="mobile__menu-link" href="index.html">Agencja</a></li>
-      <li class="mobile__menu-item"><a class="mobile__menu-link" href="portfolio.html">Portfolio</a></li>
-      <li class="mobile__menu-item"><a class="mobile__menu-link" href="#">Kontakt</a></li>
-    </ul>
-<div class="mobile__menu-address">
-  <a class="mobile__menu-phone" href="tel:+48111111111">+48 111 111 111</a>
-  <a class="mobile__menu-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-    <ul class="mobile__menu-social">
-      <li class="mobile__menu-social-item"><a class="mobile__menu-social-link" href="#">Instagram</a></li>
-      <li class="mobile__menu-social-item"><a class="mobile__menu-social-link" href="#">Twitter</a></li>
-      <li class="mobile__menu-social-item"><a class="mobile__menu-social-link" href="#">Facebook</a></li>
-      <li class="mobile__menu-social-item"><a class="mobile__menu-social-link" href="#">LinkedIn</a></li>
-    </ul>
+    <div class="mobile__menu js-menu-container" id="mobile-menu">
+      <button class="menu__toggle js-close-menu">
+        <svg class="mobile__menu-button" width="40" height="40">
+          <use href="./images/icons.svg#icon-close40px"></use>
+        </svg>
+      </button>
+      <div class="menu__container">
+        <ul class="mobile__menu-list">
+          <li class="mobile__menu-item">
+            <a class="mobile__menu-link" href="index.html">Agencja</a>
+          </li>
+          <li class="mobile__menu-item">
+            <a class="mobile__menu-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="mobile__menu-item">
+            <a class="mobile__menu-link" href="#">Kontakt</a>
+          </li>
+        </ul>
+        <div class="mobile__menu-address">
+          <a class="mobile__menu-phone" href="tel:+48111111111"
+            >+48 111 111 111</a
+          >
+          <a class="mobile__menu-mail" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+          <ul class="mobile__menu-social">
+            <li class="mobile__menu-social-item">
+              <a class="mobile__menu-social-link" href="#">Instagram</a>
+            </li>
+            <li class="mobile__menu-social-item">
+              <a class="mobile__menu-social-link" href="#">Twitter</a>
+            </li>
+            <li class="mobile__menu-social-item">
+              <a class="mobile__menu-social-link" href="#">Facebook</a>
+            </li>
+            <li class="mobile__menu-social-item">
+              <a class="mobile__menu-social-link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-<script
+    <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
