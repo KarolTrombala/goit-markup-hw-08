@@ -2,7 +2,8 @@
 .customers__list {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
+  // gap: 30px;
 
 &-link {
   display: block;
@@ -19,5 +20,19 @@
 &-link:hover {
   fill: $highlightColor;
   border-color: $highlightColor;
+ }
 }
-}
+// TABLET RESPONSIVE
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .customers__item {
+   flex-basis: calc ((100%-40px) 3);
+  }
+ } 
+ // DESKTOP RESPONSIVE
+  
+//  @media screen and (min-width: 1200px) {
+//   .customers_list-link {
+//     flex-basis: auto;
+//    }
+//   }
