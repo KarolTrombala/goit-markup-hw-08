@@ -24,6 +24,7 @@
   border-color: $highlightColor;
  }
 }
+
 @media screen and (max-width: 767px) {
   .customers__box {
       flex-basis: calc((100% - 60px) / 2);
@@ -37,6 +38,7 @@
     flex-basis: calc((100% - 60px) / 3);
   }
  } 
+ 
  // DESKTOP RESPONSIVE
   
  @media screen and (min-width: 1200px) {

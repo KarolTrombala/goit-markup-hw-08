@@ -42,7 +42,9 @@
   &__menu-contact-item:focus {
     color: $highlightColor;
   }
+
   // Menu makiety
+  
   &__menu {
     list-style: none;
     display: flex;
@@ -70,6 +72,7 @@
     position: relative;
     color: $highlightColor;
   }
+
   &__menu-link--active::after {
     content: "";
     position: absolute;

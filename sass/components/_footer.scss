@@ -4,6 +4,10 @@
 
   &__box {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
     gap: 70px;
     padding: 60px 15px;
   }
@@ -53,6 +57,7 @@
 
   &__newsletter {
     display: flex;
+    flex-direction: column;
     gap: 12px;
   }
 
@@ -64,7 +69,7 @@
     color: $whiteColor;
     outline: none;
 
-    min-width: 358px;
+    min-width: 450px;
     padding: 14px 0 14px 15px;
   }
 
@@ -76,9 +81,44 @@
   &__button {
     @extend %button;
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 24px;
     padding: 10px 28px 10px 42px;
   }
 }
+
+// TABLET RESPONSIVE
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__box {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+   } 
+
+   .footer__newsletter {
+    align-items: center;
+   }
+
+    .footer__button {
+    max-width: 250px;
+  }
+   
+   // DESKTOP RESPONSIVE
+    
+@media screen and (min-width: 1200px) {
+    .footer__box {
+      flex-direction: row;
+      text-align: left;
+    }
+
+    .footer__newsletter {
+      flex-direction: row;
+
+    
+      &-text {
+        min-width: 358px;
+    }
+   }
+  }
