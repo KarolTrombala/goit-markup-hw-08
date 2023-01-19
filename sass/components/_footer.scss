@@ -65,7 +65,8 @@
     color: $whiteColor;
     outline: none;
 
-    min-width: 450px;
+    width: calc(100vw - 30px);
+    max-width: 450px;
     padding: 14px 0 14px 15px;
   }
 
@@ -95,6 +96,10 @@
 
 .footer__newsletter {
   align-items: center;
+
+  &-text {
+    width: 450px;
+  }
 }
 
 .footer__button {
@@ -117,7 +122,7 @@
     flex-direction: row;
 
     &-text {
-      min-width: 358px;
+      width: 358px;
     }
   }
 }
