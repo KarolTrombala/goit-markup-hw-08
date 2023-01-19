@@ -54,6 +54,7 @@
   &__newsletter {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 12px;
   }
 
@@ -79,8 +80,10 @@
     @extend %button;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 24px;
     padding: 10px 28px 10px 42px;
+    max-width: 250px;
   }
 }
 
