@@ -18,9 +18,10 @@
 
 .modal {
   position: absolute;
-  width: 450px;
+  width: calc(100vw - 30px);
+  max-width: 450px;
   min-height: 581px;
-  top: 50%;
+  // top: 50%;
   left: 50%;
   padding: 40px;
 
@@ -123,6 +124,9 @@
     letter-spacing: 0.03em;
     color: $supportColor;
 
+    text-align: center;
+    display: block;
+
     position: relative;
   }
 
@@ -145,7 +149,7 @@
 
   &__form-checkbox-svg {
     position: absolute;
-    top: 50%;
+    // top: 50%;
     transform: translateY(-50%);
     opacity: 0;
 
@@ -177,7 +181,7 @@
 
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
 
     &__title {
       line-height: 1.15;
@@ -199,5 +203,17 @@
     &__form-checkbox-svg {
       left: 15px;
     }
+  }
+}
+
+
+// TABLET & DESKTOP RESPONSIVE
+
+@media screen and (min-width: 473px) {
+.modal {
+  top: 50%;
+}
+ &__form-checkbox-svg {
+  top: 50%;
   }
 }
