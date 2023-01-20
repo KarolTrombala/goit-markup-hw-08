@@ -210,13 +210,13 @@
 // TABLET & DESKTOP RESPONSIVE
 
 @media screen and (min-width: 473px) {
-.modal {
-  // top: 50%;
-}
- &__form-checkbox-svg {
+// .modal {
+//   top: 50%;
+// }
+ .modal__form-checkbox-svg {
   top: 50%;
   }
-  &__form-regulations input[type="checkbox"] {
+.modal__form-regulations input[type="checkbox"] {
     top: 50%;
 }
 }
