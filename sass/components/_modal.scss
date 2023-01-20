@@ -143,13 +143,11 @@
     border-radius: 2px;
 
     position: absolute;
-    // top: 50%;
     transform: translateY(-50%);
   }
 
   &__form-checkbox-svg {
     position: absolute;
-    // top: 50%;
     transform: translateY(-50%);
     opacity: 0;
 
@@ -210,13 +208,10 @@
 // TABLET & DESKTOP RESPONSIVE
 
 @media screen and (min-width: 473px) {
-// .modal {
-//   top: 50%;
-// }
  .modal__form-checkbox-svg {
   top: 50%;
   }
-.modal__form-regulations input[type="checkbox"] {
+ .modal__form-regulations input[type="checkbox"] {
     top: 50%;
 }
 }
