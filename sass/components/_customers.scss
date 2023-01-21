@@ -24,12 +24,9 @@
     border-color: $highlightColor;
   }
 }
-
-@media screen and (max-width: 767px) {
   .customers__box {
     flex-basis: calc((100% - 60px) / 2);
   }
-}
 
 // TABLET RESPONSIVE
 
