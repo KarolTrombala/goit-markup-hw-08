@@ -96,17 +96,17 @@
     flex-wrap: wrap;
   }
 
-.footer__newsletter {
-  align-items: center;
+  .footer__newsletter {
+    align-items: center;
 
-  &-text {
-    width: 450px;
+    &-text {
+      width: 450px;
+    }
   }
-}
 
-.footer__button {
-  max-width: 250px;
-}
+  .footer__button {
+    max-width: 250px;
+  }
 }
 // DESKTOP RESPONSIVE
 
